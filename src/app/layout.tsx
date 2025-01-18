@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Jost } from 'next/font/google'
 
 import './globals.css'
+import Header from '@/components/Header/Header'
 
 const jost = Jost({
   variable: '--font-jost',
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${jost.className} text-black  bg-white antialiased`}>
+        <Header />
         {children}
       </body>
     </html>
