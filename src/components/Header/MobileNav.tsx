@@ -1,13 +1,18 @@
 import React from 'react'
+import * as VisuallyHidden from '@radix-ui/react-visually-hidden'
 import {
   Sheet,
   SheetContent,
   SheetDescription,
   SheetHeader,
+  SheetOverlay,
   SheetTitle,
   SheetTrigger,
 } from '../ui/sheet'
 import { Menu } from 'lucide-react'
+import Image from 'next/image'
+import { NAV_LINKS } from '@/constants'
+import Link from 'next/link'
 
 const MobileNav = () => {
   return (
@@ -16,13 +21,32 @@ const MobileNav = () => {
         <SheetTrigger asChild className='cursor-pointer'>
           <Menu />
         </SheetTrigger>
-        <SheetContent>
-          <SheetHeader>
-            <SheetTitle>Title here</SheetTitle>
-            <SheetDescription>Description here</SheetDescription>
+        <SheetOverlay className='bg-[#000000]/60' />
+        <SheetContent className='h-fit bg-black p-0 flex flex-col justify-center font-medium border-none'>
+          <SheetHeader className='w-full py-9 bg-white'>
+            <SheetTitle>
+              <Image
+                src={'/logo-dark.png'}
+                alt='logo'
+                width={200}
+                height={25}
+                className='mx-auto'
+              />
+            </SheetTitle>
+            <VisuallyHidden.Root>
+              <SheetDescription>Description here</SheetDescription>
+            </VisuallyHidden.Root>
           </SheetHeader>
-          <div>
-            <p>then links would go here</p>
+          <div className='py-12'>
+            {NAV_LINKS.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                className='block py-4 text-center text-white text-2xl font-[400]'
+              >
+                {link.label.toUpperCase()}
+              </Link>
+            ))}
           </div>
         </SheetContent>
       </Sheet>
