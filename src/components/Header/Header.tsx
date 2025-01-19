@@ -3,6 +3,7 @@ import MaxWidthWrapper from '../MaxWidthWrapper'
 import Image from 'next/image'
 import { NAV_LINKS } from '@/constants'
 import Link from 'next/link'
+import MobileNav from './MobileNav'
 
 const Header = () => {
   return (
@@ -10,11 +11,12 @@ const Header = () => {
       <MaxWidthWrapper className='flex justify-between items-center'>
         <Image src={'/logo-dark.png'} alt='logo' width={200} height={25} />
         <div className='flex items-center gap-10'>
-          {NAV_LINKS.map((link, index) => (
+          {/* {NAV_LINKS.map((link, index) => (
             <Link key={link.label} href={link.href} className='tracking-[2px]'>
               {link.label.toUpperCase()}
             </Link>
-          ))}
+          ))} */}
+          <MobileNav />
         </div>
       </MaxWidthWrapper>
     </header>
