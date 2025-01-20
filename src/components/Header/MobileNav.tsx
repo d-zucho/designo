@@ -16,14 +16,14 @@ import Link from 'next/link'
 
 const MobileNav = () => {
   return (
-    <>
-      <Sheet>
+    <div id='mobile-nav'>
+      <Sheet modal>
         <SheetTrigger asChild className='cursor-pointer'>
-          <Menu />
+          <Menu size={32} fill='#000000' className='text-black' />
         </SheetTrigger>
         <SheetOverlay className='bg-[#000000]/60' />
-        <SheetContent className='h-fit bg-black p-0 flex flex-col justify-center font-medium border-none'>
-          <SheetHeader className='w-full py-9 bg-white'>
+        <SheetContent className='p-0 flex flex-col justify-center font-medium border-none bg-black h-fit w-full sm:w-[400px]'>
+          <SheetHeader className='py-9 bg-white'>
             <SheetTitle>
               <Image
                 src={'/logo-dark.png'}
@@ -37,7 +37,7 @@ const MobileNav = () => {
               <SheetDescription>Description here</SheetDescription>
             </VisuallyHidden.Root>
           </SheetHeader>
-          <div className='py-12'>
+          <div className='py-12 bg-black'>
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.label}
@@ -50,7 +50,7 @@ const MobileNav = () => {
           </div>
         </SheetContent>
       </Sheet>
-    </>
+    </div>
   )
 }
 
