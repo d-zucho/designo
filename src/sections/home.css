@@ -1,0 +1,84 @@
+.gridContainer {
+  margin-top: 120px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-rows: repeat(2, 400px);
+  gap: 24px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    'webDesign appDesign appDesign'
+    'webDesign graphicDesign graphicDesign';
+
+  @media (max-width: 1048px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 250px);
+    grid-template-areas:
+      'webDesign'
+      'appDesign'
+      'graphicDesign';
+  }
+}
+
+#webDesign {
+  grid-area: webDesign;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/assets/home/desktop/image-web-design-large.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+
+  @media (max-width: 1048px) {
+    background-image: url('/assets/home/tablet/image-web-design.jpg');
+  }
+  @media (max-width: 768px) {
+    background-image: url('/assets/home/mobile/image-web-design.jpg');
+    height: 250px;
+  }
+}
+
+#appDesign {
+  grid-area: appDesign;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/assets/home/desktop/image-app-design.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/assets/home/desktop/image-app-design.jpg');
+
+  @media (max-width: 1048px) {
+    background-image: url('/assets/home/tablet/image-app-design.jpg');
+  }
+  @media (max-width: 768px) {
+    background-image: url('/assets/home/mobile/image-app-design.jpg');
+    height: 250px;
+  }
+}
+
+#graphicDesign {
+  grid-area: graphicDesign;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/assets/home/desktop/image-graphic-design.jpg');
+
+  @media (max-width: 1048px) {
+    background-image: url('/assets/home/tablet/image-graphic-design.jpg');
+  }
+  @media (max-width: 768px) {
+    background-image: url('/assets/home/mobile/image-graphic-design.jpg');
+    height: 250px;
+  }
+  background-repeat: no-repeat;
+}

@@ -64,7 +64,7 @@ export default {
       },
       backgroundImage: {
         'hero-pattern': 'url("/bg-pattern-hero-home.svg")',
-        webDesktop: 'url("/assets/home/desktop/image-web-design.jpg")',
+        webDesktop: 'url("/assets/home/desktop/image-web-design-small.jpg")',
         appDesktop: 'url("/assets/home/desktop/image-app-design.jpg")',
         graphicDesktop: 'url("/assets/home/desktop/image-graphic-design.jpg")',
         webTablet: 'url("/assets/home/tablet/image-web-design.jpg")',
