@@ -1,13 +1,13 @@
 import Hero from '@/components/Hero'
-import HomeAbout from '@/sections/HomeAbout'
-import Image from 'next/image'
+import HomeCategories from '@/sections/HomeCategories'
+import HomeFeaturesSection from '@/sections/HomeFeaturesSection'
 
 export default function Home() {
   return (
     <div>
-      <p>testing this</p>
       <Hero />
-      <HomeAbout />
+      <HomeCategories />
+      <HomeFeaturesSection />
     </div>
   )
 }
