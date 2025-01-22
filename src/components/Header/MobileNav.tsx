@@ -42,7 +42,7 @@ const MobileNav = () => {
               <Link
                 key={link.label}
                 href={link.href}
-                className='block py-4 text-center text-white text-2xl font-[400]'
+                className='block py-4 text-center text-white text-2xl font-[400] hover:text-peach transition duration-300'
               >
                 {link.label.toUpperCase()}
               </Link>

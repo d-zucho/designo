@@ -12,7 +12,11 @@ const Header = () => {
         <Image src={'/logo-dark.png'} alt='logo' width={200} height={25} />
         <div className='hidden md:flex md:items-center md:gap-10'>
           {NAV_LINKS.map((link) => (
-            <Link key={link.label} href={link.href} className='tracking-[2px]'>
+            <Link
+              key={link.label}
+              href={link.href}
+              className='tracking-[2px] hover:text-peach transition duration-300'
+            >
               {link.label.toUpperCase()}
             </Link>
           ))}

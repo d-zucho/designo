@@ -9,7 +9,7 @@ export default function Home() {
       <Hero />
       <HomeCategories />
       <HomeFeaturesSection />
-      <HomeCTA />
+      {/* <HomeCTA /> */}
     </div>
   )
 }

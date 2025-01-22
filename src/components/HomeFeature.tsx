@@ -9,7 +9,7 @@ interface HomeFeatureProps {
 
 const HomeFeature = ({ feature, description, image }: HomeFeatureProps) => {
   return (
-    <div className='flex flex-col gap-8 max-w-xs md:max-w-full md:flex-row mx-auto items-center text-center lg:flex-col lg:text-center'>
+    <div className='flex flex-col  max-w-xs md:max-w-full md:flex-row md:gap-8 lg:gap-4 mx-auto items-center text-center lg:flex-col lg:text-center'>
       <Image src={image} alt={feature} width={200} height={200} />
       <div className='mt-12 md:mt-0 md:flex md:flex-col md:justify-center md:text-left lg:text-center '>
         <h3 className='h3'>{feature}</h3>

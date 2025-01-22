@@ -6,7 +6,7 @@ const HomeFeaturesSection = () => {
   return (
     <section className='my-32 border-red-200 py-20'>
       <MaxWidthWrapper>
-        <div className='grid grid-cols-1 gap-16 lg:grid-cols-3'>
+        <div className='grid grid-cols-1 gap-24 md:gap-16 lg:grid-cols-3'>
           {FEATURES.map((feature) => (
             <HomeFeature
               key={feature.feature}

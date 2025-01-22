@@ -15,7 +15,7 @@ const HomeCategories = () => {
               id={category.id}
               className='flex flex-col items-center justify-center relative z-0'
             >
-              <div className='absolute inset-0 w-full h-full bg-slate-950/50' />
+              <div className='absolute inset-0 w-full h-full bg-slate-950/50 rounded-2xl' />
               <div className='z-50'>
                 <h2 className='h2 text-white z-50'>
                   {category.category.toUpperCase()}
