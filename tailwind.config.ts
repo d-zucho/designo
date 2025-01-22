@@ -74,6 +74,8 @@ export default {
         webMobile: 'url("/assets/home/mobile/image-web-design.jpg")',
         appMobile: 'url("/assets/home/mobile/image-app-design.jpg")',
         graphicMobile: 'url("/assets/home/mobile/image-graphic-design.jpg")',
+        homeCTACircles:
+          'url("/assets/shared/desktop/bg-pattern-call-to-action.svg")',
       },
     },
   },
