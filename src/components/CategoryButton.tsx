@@ -4,10 +4,14 @@ import RightArrow from '@/icons/icon-right-arrow.svg'
 import { buttonVariants } from './ui/button'
 import Image from 'next/image'
 
-const CategoryButton = () => {
+interface CategoryButtonProps {
+  href: string
+}
+
+const CategoryButton = ({ href }: CategoryButtonProps) => {
   return (
     <Link
-      href='/'
+      href={href}
       className={cn(
         buttonVariants(),
         'flex gap-3 bg-trtansparent hover:bg-transparent'

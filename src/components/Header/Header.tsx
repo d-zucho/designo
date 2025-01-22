@@ -9,7 +9,9 @@ const Header = () => {
   return (
     <header className='w-full py-16'>
       <MaxWidthWrapper className='flex justify-between items-center'>
-        <Image src={'/logo-dark.png'} alt='logo' width={200} height={25} />
+        <Link href='/'>
+          <Image src={'/logo-dark.png'} alt='logo' width={200} height={25} />
+        </Link>
         <div className='hidden md:flex md:items-center md:gap-10'>
           {NAV_LINKS.map((link) => (
             <Link

@@ -25,13 +25,17 @@ const MobileNav = () => {
         <SheetContent className='p-0 flex flex-col justify-center font-medium border-none bg-black h-fit w-full sm:w-[400px]'>
           <SheetHeader className='py-9 bg-white'>
             <SheetTitle>
-              <Image
-                src={'/logo-dark.png'}
-                alt='logo'
-                width={200}
-                height={25}
-                className='mx-auto'
-              />
+              <SheetTrigger asChild>
+                <Link href={'/'}>
+                  <Image
+                    src={'/logo-dark.png'}
+                    alt='logo'
+                    width={200}
+                    height={25}
+                    className='mx-auto'
+                  />
+                </Link>
+              </SheetTrigger>
             </SheetTitle>
             <VisuallyHidden.Root>
               <SheetDescription>Description here</SheetDescription>
