@@ -1,4 +1,9 @@
 import { TFeature, TNavLink } from '@/lib/types'
+import TwitterIcon from '@/assets/icons/icon-twitter.svg'
+import InstragramIcon from '@/assets/icons/icon-instagram.svg'
+import PinterestIcon from '@/assets/icons/icon-pinterest.svg'
+import FacebookIcon from '@/assets/icons/icon-facebook.svg'
+import YoutubeIcon from '@/assets/icons/icon-youtube.svg'
 
 export const NAV_LINKS: TNavLink[] = [
   {
@@ -51,5 +56,28 @@ export const FEATURES: TFeature[] = [
     description:
       'We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide.',
     image: '/assets/home/desktop/illustration-friendly.svg',
+  },
+]
+
+export const SOCIAL_ICONS = [
+  {
+    icon: TwitterIcon,
+    alt: 'Twitter Icon',
+  },
+  {
+    icon: InstragramIcon,
+    alt: 'Instagram Icon',
+  },
+  {
+    icon: PinterestIcon,
+    alt: 'Pinterest Icon',
+  },
+  {
+    icon: FacebookIcon,
+    alt: 'Facebook Icon',
+  },
+  {
+    icon: YoutubeIcon,
+    alt: 'Youtube Icon',
   },
 ]
